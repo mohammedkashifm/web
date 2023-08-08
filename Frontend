@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        max-width: 500px ;
+        height: 900px;
+        align-items: center;
+        display: contents;
+        border: 2px solid black;
+    }
+    .hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 10px auto;
+  font-family: Metropolis;
+  font-size: x-large;
+  color: rgba(0, 127, 97, 1);
+  text-align: center;
+  display: block; 
+   
+}
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 160px;
+  background: rgba(200, 200, 200, 1);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 160px;
+  background: rgb(209, 203, 203);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+ 
+}
+.box{
+    max-width: 500px;
+    height : auto;
+    border: 2px solid rgb(231, 236, 238);
+    padding: 10px 20px 30px 40px;
+    margin: auto;
+}
+#box1{
+    display: none;
+}
+#box2{
+    display: none;
+}
+#box3{
+    display: none;
+}
+input{
+    margin: 20px;
+    
+}
+
+.off{
+    text-align: right;
+    margin: -42px 60px 0px 0px;
+}
+.dis{
+    margin: -10px 0px 0px 58px;
+    padding: 3px 0px 0px 0px;
+    
+}
+.bold{
+    font-size: 20px;
+    font-weight: 800;
+}
+.smallbox{
+    
+    width: 300px;
+    height: 100px;
+    
+    margin: 27px 0px 0px 30px;
+}
+.distance{
+    margin: 10px 0px 10px 50px;
+}
+.arrow {
+    color: #000;
+    padding: 0 10px;
+    margin: 0px 10px 5px 0px;
+}
+.colortext{
+    color: rgba(0, 127, 97, 1);
+    margin-left: 29%;
+}
+#totalalign{
+    display: block;
+    text-align: right;
+    margin: -35px 10px 0px 0px;
+    margin-right: 29%;
+}
+button{
+    display: block;
+    width: 559px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 127, 97, 1);
+    margin-left: 29%;
+}
+button:hover{
+    background-color: rgb(159, 216, 203);
+}
+
+</style>
+<body>
+    <div class="container">
+        <h4 class="hr-lines">Bundle & Save</h4>
+        <div class="box" id="topbox1">
+            <input type="radio" name="pair" id="box"><label> 1 Pair </label><br>
+            <p class="dis bold"> DKK 195.00 </p><p class="off bold">50% OFF</p>
+        <div class="smallbox" id="box1">
+            <p class="distance">Size <span class="distance">Colour</span></p>
+			<div>
+				<span>#1</span>
+				<select class="arrow" name="Size">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+				</select>
+				<select class="arrow" name="color">
+					<option value="white">White</option>
+					<option value="blue">Blue</option>
+					<option value="red">Red</option>
+				</select>
+                <div>
+                    <span>#2</span>
+                    <select class="arrow" name="Size">
+                        <option value="small"> Small </option>
+                        <option value="medium"> Medium</option>
+                        <option value="large"> Large </option>
+                    </select>
+                    <select class="arrow" name="color">
+                        <option value="white">White</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+                </div>
+			</div>
+        </div>
+    </div><br>
+    <div class="box" id="topbox2">
+        <input type="radio" name="pair" id="box"><label> 2 Pair </label><br><p class="dis bold">DKK 195.00</p><p class="off bold">40% OFF</p>
+    <div class="smallbox" id="box2">
+        <p class="distance">Size <span class="distance">Colour</span></p>
+        <div>
+            <span>#1</span>
+            <select class="arrow" name="Size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <select class="arrow" name="color">
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+            </select>
+            <div>
+                <span>#2</span>
+                <select class="arrow" name="Size">
+                    <option value="small"> Small </option>
+                    <option value="medium"> Medium</option>
+                    <option value="large"> Large </option>
+                </select>
+                <select class="arrow" name="color">
+                    <option value="white">White</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div><br>
+<div class="box" id="topbox3">
+    <input type="radio" name="pair" id="box"><label> 3 Pair </label><br><p class="dis bold">DKK 195.00</p><p class="off bold">60% OFF</p>
+<div class="smallbox" id="box3">
+    <p class="distance">Size <span class="distance">Colour</span></p>
+    <div>
+        <span>#1</span>
+        <select class="arrow" name="Size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <select class="arrow" name="color">
+            <option value="white">White</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+        </select>
+        <div>
+            <span>#2</span>
+            <select class="arrow" name="Size">
+                <option value="small"> Small </option>
+                <option value="medium"> Medium</option>
+                <option value="large"> Large </option>
+            </select>
+            <select class="arrow" name="color">
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+            </select>
+        </div> 
+    </div>
+</div>
+</div> 
+<div><p class="colortext">Free 2 Day Shipping</p><span id="totalalign">Total :<span class="bold "> DKK 360.00</span></span>
+<button onclick="Addtocart()">+ Add To Cart</button></div>
+    </div>
+
+    <script>
+        let topbox1 = document.getElementById('topbox1');
+        let box1 = document.getElementById('box1');
+        topbox1.addEventListener('click',(e) =>{
+            box1.style.display= 'block';
+            topbox1.style.border = '2px solid rgb(101, 212, 240)';
+            ("input[name='pair']:checked");
+            
+        })
+        let topbox2 = document.getElementById('topbox2');
+        let box2 = document.getElementById('box2');
+        topbox2.addEventListener('click',(e) =>{
+            box2.style.display= 'block';
+            topbox2.style.border = '2px solid rgb(101, 212, 240)';
+        })
+        let topbox3 = document.getElementById('topbox3');
+        let box3 = document.getElementById('box3');
+        topbox3.addEventListener('click',(e) =>{
+            box3.style.display= 'block';
+            topbox3.style.border = '2px solid rgb(101, 212, 240)';
+        })
+        
+    </script>
+</body>
+</html>
